@@ -38,26 +38,23 @@
         <img src="Assets/images/menu.png" id="menu">
     </div>
     <script>
-        var menuBtn = document.getElementById("menuBtn")
-        var SideNav = document.getElementById("SideNav")
-        var menu = document.getElementById("menu")
-
-        SideNav.style.right == "-250px";
+        const menuBtn = document.getElementById("menuBtn");
+        const SideNav = document.getElementById("SideNav");
+        const menu = document.getElementById("menu");
 
         menuBtn.onclick = function () {
-            if (SideNav.style.right == "-250px") {
-                SideNav.style.right = "0";
+            if (SideNav.classList.contains("active")) {
+                SideNav.classList.remove("active");
+                menu.src = "Assets/images/menu.png";
+            } else {
+                SideNav.classList.add('active');
                 menu.src = "Assets/images/close.png";
             }
-            else {
-                SideNav.style.right = "-250px";
-                menu.src = "Assets/images/menu.png";
-            }
         }
-        var scroll = new SmoothScroll('a[href*="#"]', {
-            speed: 1000,
-            speedAsDuration: true
-        });
+        // const scroll = new SmoothScroll('a[href*="#"]', {
+        //     speed: 1000,
+        //     speedAsDuration: true
+        // });
     </script>
 
     <!--feature-->
@@ -71,21 +68,24 @@
                 <h1>Experienced staff</h1>
                 <div class="features-desc">
                     <div class="feature-text">
-                        <p> <img src="Assets/icons/sheild.png" class="feature-icon"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p> <img src="./Assets/icons/sheild.png" class="feature-icon"> Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.
                             Tempora eaque quae explicabo minima</p>
                     </div>
                 </div>
                 <h1>Pre Booking Online</h1>
                 <div class="features-desc">
                     <div class="feature-text">
-                        <p><img src="Assets/icons/check-box.png" class="feature-icon"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p><img src="Assets/icons/check-box.png" class="feature-icon"> Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.
                             Tempora eaque quae explicabo minima</p>
                     </div>
                 </div>
                 <h1>Affordable Cost</h1>
                 <div class="features-desc">
                     <div class="feature-text">
-                        <p><img src="Assets/icons/inr.jpg" class="feature-icon"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p><img src="Assets/icons/inr.jpg" class="feature-icon"> Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.
                             Tempora eaque quae explicabo minima</p>
                     </div>
                 </div>
@@ -209,7 +209,7 @@
             </div>
         </div>
     </section>
-    
+
     <!--footer-->
     <section id="footer">
         <img src="Assets/images/footer-img.png" class="footer-img">
