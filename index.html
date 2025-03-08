@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/Styles.css">
+    <link rel="stylesheet" href="https://sctackpath.bootstrapcdn.com/font-awsome/4.7.0/css/font-awsome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleleapis.com/css?family=kaushan+script|Poppins&display=swap">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.main.js"></script>
+    <title>Barber Shop</title>
+</head>
+
+<body>
+    <section id="banner">
+        <img src="Assets/images/logo.png" class="logo">
+        <div class="banner-text">
+            <h1>Hair Studio</h1>
+            <p>Style Your Hair Is Style Your Life</p>
+            <div class="banner-btn">
+                <a href="#"><span></span>Find Out</a>
+                <a href="#"><span></span>Read More</a>
+            </div>
+        </div>
+    </section>
+    <div id="SideNav">
+        <nav>
+            <ul>
+                <li><a href="#banner">HOME</a></li>
+                <li><a href="#feature">FEATURES</a></li>
+                <li><a href="#service">SERVICES</a></li>
+                <li><a href="#testimonial">TESTIMONIALS</a></li>
+                <li><a href="#footer">MEET US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="Assets/images/menu.png" id="menu">
+    </div>
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var SideNav = document.getElementById("SideNav")
+        var menu = document.getElementById("menu")
+
+        SideNav.style.right == "-250px";
+
+        menuBtn.onclick = function () {
+            if (SideNav.style.right == "-250px") {
+                SideNav.style.right = "0";
+                menu.src = "Assets/images/close.png";
+            }
+            else {
+                SideNav.style.right = "-250px";
+                menu.src = "Assets/images/menu.png";
+            }
+        }
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 1000,
+            speedAsDuration: true
+        });
+    </script>
+
+    <!--feature-->
+    <section id="feature">
+        <div class="title-text">
+            <p>FEATURES</p>
+            <h1>Why choose us</h1>
+        </div>
+        <div class="feature-box">
+            <div class="features">
+                <h1>Experienced staff</h1>
+                <div class="features-desc">
+                    <div class="feature-text">
+                        <p> <img src="Assets/icons/sheild.png" class="feature-icon"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Tempora eaque quae explicabo minima</p>
+                    </div>
+                </div>
+                <h1>Pre Booking Online</h1>
+                <div class="features-desc">
+                    <div class="feature-text">
+                        <p><img src="Assets/icons/check-box.png" class="feature-icon"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Tempora eaque quae explicabo minima</p>
+                    </div>
+                </div>
+                <h1>Affordable Cost</h1>
+                <div class="features-desc">
+                    <div class="feature-text">
+                        <p><img src="Assets/icons/inr.jpg" class="feature-icon"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Tempora eaque quae explicabo minima</p>
+                    </div>
+                </div>
+            </div>
+            <div class="features-img">
+                <img src="Assets/images/barber.jpg" alt="barber-man">
+            </div>
+        </div>
+    </section>
+
+    <!--Service -->
+    <section id="service">
+        <div class="title-text">
+            <p>SERVICES</p>
+            <h1>We Provide Better</h1>
+        </div>
+        <div class="service-box">
+            <div class="single-service">
+                <img src="Assets/images/pic-1.jpg">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Hair Styling</h3>
+                    <hr>
+                    <p>this is text under description of barber
+                        foundation this is text under description of
+                        barber foundation</p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="Assets/images/pic-2.jpg">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Beard Trim</h3>
+                    <hr>
+                    <p>this is text under description of barber
+                        foundation this is text under description of
+                        barber foundation</p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="Assets/images/pic-3.jpg">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Hair Cut</h3>
+                    <hr>
+                    <p>this is text under description of barber
+                        foundation this is text under description of
+                        barber foundation</p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="Assets/images/pic-4.jpg">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Dry Shampoo</h3>
+                    <hr>
+                    <p>this is text under description of barber
+                        foundation this is text under description of
+                        barber foundation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Testimonial-->
+    <section id="testimonial">
+        <div class="title-text">
+            <p>TESTIMONIAL</p>
+            <h1>What Client Says</h1>
+        </div>
+        <div class="testimonial-row">
+            <div class="testimonial-col">
+                <div class="user">
+                    <img src="Assets/images/img-1.jpg">
+                    <div class="user-info">
+                        <div class="profile">
+                            <h4>Ken Norman</h4>
+                            <img class="tweat" src="Assets/icons/x.png">
+                        </div>
+                        <small>@kennorman</small>
+                    </div>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Possimus ut officiis aperiam pariatur fuga recusandae
+                    voluptates quisquam non corporis enim obcaecati neque,
+                    ipsum exercitationem incidunt eius vel magnam cupiditate
+                    doloribus!</p>
+            </div>
+            <div class="testimonial-col">
+                <div class="user">
+                    <img src="Assets/images/img-2.jpg">
+                    <div class="user-info">
+                        <div class="profile">
+                            <h4>Liara Karian</h4>
+                            <img class="tweat" src="Assets/icons/x.png">
+                        </div>
+                        <small>@lairakarian</small>
+                    </div>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Possimus ut officiis aperiam pariatur fuga recusandae
+                    voluptates quisquam non corporis enim obcaecati neque,
+                </p>
+            </div>
+            <div class="testimonial-col">
+                <div class="user">
+                    <img src="Assets/images/img-3.jpg">
+                    <div class="user-info">
+                        <div class="profile">
+                            <h4>Ricky Daniel</h4>
+                            <img class="tweat" src="Assets/icons/x.png">
+                        </div>
+                        <small>@rickydaniel</small>
+                    </div>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Possimus ut officiis aperiam pariatur fuga recusandae
+                    voluptates quisquam non corporis enim obcaecati neque,
+                    ipsum exercitationem incidunt eius vel magnam cupiditate
+                    doloribus!</p>
+            </div>
+        </div>
+    </section>
+    
+    <!--footer-->
+    <section id="footer">
+        <img src="Assets/images/footer-img.png" class="footer-img">
+        <div class="title-text">
+            <p>CONTACT</p>
+            <h1>Visit Shop Today</h1>
+        </div>
+        <div class="footer-row">
+            <div class="footer-left">
+                <h1>Opening hours</h1>
+                <p><img class="footer-icon" src=Assets/icons/clock.png> Monday to Friday - 9am to 9pm</p>
+                <p><img class="footer-icon" src=Assets/icons/clock.png> Sartuday and Sunday - 8am to 11pm</p>
+            </div>
+            <div class="footer-right">
+                <h1>Get In TOuch</h1>
+                <p>Yaounde - Cameroon <img src="Assets/icons/map-marker.png" class="footer-icon"></p>
+                <p>lahfenbrandy@gmail.com <img src="Assets/icons/paper-plane.png" class="footer-icon"></p>
+                <p>+237 673-108-111 <img src="Assets/icons/phone.png" class="footer-icon"></p>
+            </div>
+        </div>
+        <div class="social-links">
+            <img src="Assets/icons/facebook.png" class="social-icons">
+            <img src="Assets/icons/instagram.png" class="social-icons">
+            <img src="Assets/icons/x.png" class="social-icons">
+            <img src="Assets/icons/youtube.png" class="social-icons">
+            <p>Copyright 2025</p>
+        </div>
+    </section>
+</body>
+
+</html>
