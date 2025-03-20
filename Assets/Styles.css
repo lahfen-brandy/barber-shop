@@ -16,9 +16,8 @@ html {
 }
 
 .logo {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url(images/logo.png);
     width: 140px;
-    position: fixed;
+    position: absolute;
     top: 4%;
     left: 2%;
     border-radius: 10px;
@@ -78,7 +77,7 @@ html {
 
 #SideNav {
     width: 150px;
-    height: 50vh;
+    height: 40vh;
     position: fixed;
     right: -250px;
     top: 0;
