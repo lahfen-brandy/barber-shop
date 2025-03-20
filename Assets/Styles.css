@@ -16,12 +16,10 @@ html {
 }
 
 .logo {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url(images/logo.png);
     width: 140px;
-    position: fixed;
+    position: absolute;
     top: 4%;
     left: 2%;
-    border-radius: 10px;
 }
 
 .banner-text {
