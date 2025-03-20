@@ -2,5 +2,6 @@
     "workbench.tree.enableStickyScroll": true,
     "terminal.integrated.stickyScroll.enabled": false,
     "editor.scrollbar.ignoreHorizontalScrollbarInContentHeight": false,
-    "editor.stickyTabStops": false
+    "editor.stickyTabStops": false,
+    "liveServer.settings.port": 5501
 }
