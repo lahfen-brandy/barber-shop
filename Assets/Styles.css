@@ -117,7 +117,7 @@ nav ul li a {
     margin-top: 15px;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 600px) {
     .banner-text h1 {
         font-size: 44px;
     }
@@ -223,7 +223,7 @@ nav ul li a {
     text-align: initial;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 600px) {
     .title-text h1 {
         font-size: 35px;
     }
@@ -315,7 +315,7 @@ hr {
     bottom: 40%;
     opacity: 1;
 }
-@media screen and (max-width: 770px){
+@media screen and (max-width: 600px){
     .single-service{
         flex-basis: 100%;
         margin-bottom: 30px;
@@ -383,7 +383,7 @@ hr {
 .testimonial-col:hover{
     transform: translateY(-7px);
 }
-@media screen and (max-width: 770px){
+@media screen and (max-width: 600px){
     .testimonial-col{
         flex-basis: 100%;
     }
@@ -456,7 +456,7 @@ hr {
     font-size: 12px;
     margin-top: 20px;
 }
-@media screen and (max-width: 770px){
+@media screen and (max-width: 600px){
     .footer-left, .footer-right{
         flex-basis: 100%;
         font-size: 14px;
